@@ -1,4 +1,4 @@
-import { View, Text, Button } from 'react-native'
+import { SafeAreaView, Text, Button } from 'react-native'
 import React from 'react'
 
 export default function SettingsScreen(props) {
@@ -7,7 +7,7 @@ export default function SettingsScreen(props) {
         navigation.navigate("Home");
       };
   return (
-    <View>
+    <SafeAreaView>
       <Text> Hola SettingsScreen</Text>
       <Text> Hola SettingsScreen</Text>
       <Text> Hola SettingsScreen</Text>
@@ -16,6 +16,6 @@ export default function SettingsScreen(props) {
       <Text> Hola SettingsScreen</Text>
       <Text> Hola SettingsScreen</Text>
       <Button onPress={goToHome} title="Ir a Home" />
-    </View>
+    </SafeAreaView>
   )
 }
